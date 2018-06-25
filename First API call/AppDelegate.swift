@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  First API call
-//
-//  Created by Duponchel Nicolas on 20/06/2018.
-//  Copyright © 2018 Duponchel Nicolas. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

@@ -12,9 +12,15 @@
 		4B232A4720DABEB300C637FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B232A4520DABEB300C637FD /* Main.storyboard */; };
 		4B232A4920DABEB400C637FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B232A4820DABEB400C637FD /* Assets.xcassets */; };
 		4B232A4C20DABEB400C637FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B232A4A20DABEB400C637FD /* LaunchScreen.storyboard */; };
+		4B232A5420DBD2EA00C637FD /* ChuckNorrisApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B232A5320DBD2EA00C637FD /* ChuckNorrisApiService.swift */; };
+		4B232A5620DBD30700C637FD /* ChuckNorrisApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B232A5520DBD30700C637FD /* ChuckNorrisApi.swift */; };
+		4B232A5820DBD32800C637FD /* ChuckNorrisResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B232A5720DBD32800C637FD /* ChuckNorrisResponse.swift */; };
+		4B232A5A20DBD33900C637FD /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B232A5920DBD33900C637FD /* Joke.swift */; };
+		EBC5C65344427E89C507C79A /* Pods_First_API_call.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D49304040A4BF8365A4E0E8 /* Pods_First_API_call.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		087D059EEE153C4C6F1E475D /* Pods-First API call.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-First API call.release.xcconfig"; path = "Pods/Target Support Files/Pods-First API call/Pods-First API call.release.xcconfig"; sourceTree = "<group>"; };
 		4B232A3E20DABEB300C637FD /* First API call.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "First API call.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B232A4120DABEB300C637FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B232A4320DABEB300C637FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,12 @@
 		4B232A4820DABEB400C637FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B232A4B20DABEB400C637FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B232A4D20DABEB400C637FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B232A5320DBD2EA00C637FD /* ChuckNorrisApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisApiService.swift; sourceTree = "<group>"; };
+		4B232A5520DBD30700C637FD /* ChuckNorrisApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisApi.swift; sourceTree = "<group>"; };
+		4B232A5720DBD32800C637FD /* ChuckNorrisResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisResponse.swift; sourceTree = "<group>"; };
+		4B232A5920DBD33900C637FD /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		86506FD78578AA8BAB35AE7B /* Pods-First API call.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-First API call.debug.xcconfig"; path = "Pods/Target Support Files/Pods-First API call/Pods-First API call.debug.xcconfig"; sourceTree = "<group>"; };
+		8D49304040A4BF8365A4E0E8 /* Pods_First_API_call.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_First_API_call.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC5C65344427E89C507C79A /* Pods_First_API_call.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,8 @@
 			children = (
 				4B232A4020DABEB300C637FD /* First API call */,
 				4B232A3F20DABEB300C637FD /* Products */,
+				AC87795179383362D99B7902 /* Pods */,
+				DD762EA07BC87C9F6FEC43B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +71,49 @@
 			children = (
 				4B232A4120DABEB300C637FD /* AppDelegate.swift */,
 				4B232A4320DABEB300C637FD /* ViewController.swift */,
+				4B232A5C20DBE0D400C637FD /* Api */,
+				4B232A5B20DBE0CA00C637FD /* Model */,
 				4B232A4520DABEB300C637FD /* Main.storyboard */,
 				4B232A4820DABEB400C637FD /* Assets.xcassets */,
 				4B232A4A20DABEB400C637FD /* LaunchScreen.storyboard */,
 				4B232A4D20DABEB400C637FD /* Info.plist */,
 			);
 			path = "First API call";
+			sourceTree = "<group>";
+		};
+		4B232A5B20DBE0CA00C637FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B232A5720DBD32800C637FD /* ChuckNorrisResponse.swift */,
+				4B232A5920DBD33900C637FD /* Joke.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B232A5C20DBE0D400C637FD /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				4B232A5320DBD2EA00C637FD /* ChuckNorrisApiService.swift */,
+				4B232A5520DBD30700C637FD /* ChuckNorrisApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		AC87795179383362D99B7902 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86506FD78578AA8BAB35AE7B /* Pods-First API call.debug.xcconfig */,
+				087D059EEE153C4C6F1E475D /* Pods-First API call.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD762EA07BC87C9F6FEC43B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D49304040A4BF8365A4E0E8 /* Pods_First_API_call.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B232A5020DABEB400C637FD /* Build configuration list for PBXNativeTarget "First API call" */;
 			buildPhases = (
+				EE15AF7B1B15D62E749EC202 /* [CP] Check Pods Manifest.lock */,
 				4B232A3A20DABEB300C637FD /* Sources */,
 				4B232A3B20DABEB300C637FD /* Frameworks */,
 				4B232A3C20DABEB300C637FD /* Resources */,
+				27346D5CD46754F3F82BF186 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +184,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27346D5CD46754F3F82BF186 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-First API call/Pods-First API call-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-SwiftyJSONMapper/Moya_SwiftyJSONMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_SwiftyJSONMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-First API call/Pods-First API call-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE15AF7B1B15D62E749EC202 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-First API call-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4B232A3A20DABEB300C637FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B232A5620DBD30700C637FD /* ChuckNorrisApi.swift in Sources */,
+				4B232A5820DBD32800C637FD /* ChuckNorrisResponse.swift in Sources */,
+				4B232A5A20DBD33900C637FD /* Joke.swift in Sources */,
 				4B232A4420DABEB300C637FD /* ViewController.swift in Sources */,
 				4B232A4220DABEB300C637FD /* AppDelegate.swift in Sources */,
+				4B232A5420DBD2EA00C637FD /* ChuckNorrisApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +385,7 @@
 		};
 		4B232A5120DABEB400C637FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86506FD78578AA8BAB35AE7B /* Pods-First API call.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +404,7 @@
 		};
 		4B232A5220DABEB400C637FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087D059EEE153C4C6F1E475D /* Pods-First API call.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

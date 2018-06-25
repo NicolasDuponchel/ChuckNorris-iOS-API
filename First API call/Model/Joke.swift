@@ -10,10 +10,4 @@ class Joke : NSObject, ALSwiftyJSONAble {
         id = jsonData["id"].intValue
         text = jsonData["joke"].string!
     }
-    
-    init(id: Int, text: String) {
-        super.init()
-        self.id = id
-        self.text = text
-    }
 }

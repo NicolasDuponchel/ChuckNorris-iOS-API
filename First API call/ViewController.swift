@@ -1,25 +1,25 @@
-//
-//  ViewController.swift
-//  First API call
-//
-//  Created by Duponchel Nicolas on 20/06/2018.
-//  Copyright © 2018 Duponchel Nicolas. All rights reserved.
-//
-
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var joke: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func onNewJokeRequested() { getJoke() }
+    
+    func getJoke() {
+        _ = ChuckNorrisService()
+            .getJoke()
+            .subscribe(
+                onSuccess: { response in self.joke.text = response.joke.text },
+                onError: { error in self.joke.text = error.localizedDescription })
+    }
 }
 

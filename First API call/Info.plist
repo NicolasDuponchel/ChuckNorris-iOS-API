@@ -41,5 +41,19 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>api.icndb.com</key>
+			<string></string>
+			<key>NSExceptionAllowsInsecureHTTPLoads</key>
+			<string></string>
+			<key>NSIncludesSubdomains</key>
+			<string></string>
+		</dict>
+	</dict>
 </dict>
 </plist>
